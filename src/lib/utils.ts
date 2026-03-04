@@ -19,8 +19,8 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const CONTACT = {
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "919000000000",
-  phone: process.env.NEXT_PUBLIC_PHONE_NUMBER ?? "+91 90000 00000",
+  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_OWNER ?? "917799771916",
+  phone: "+91 77997 71916",
   email: "luminastaysvizag@gmail.com",
   address: "Plot No. 121/B, Opp Children's Park, PF Office Road, Marripalem, VUDA Layout, Visakhapatnam – 530009",
   addressLines: [
@@ -30,10 +30,10 @@ export const CONTACT = {
     "Visakhapatnam – 530009",
   ],
   mapsUrl:
-    "https://maps.google.com/maps?q=Marripalem+VUDA+Layout+Visakhapatnam+530009&output=embed&z=16",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d952.8693185!2d83.2439395!3d17.7456678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a396711d138942b%3A0xee53a48b9ffbe34e!2sLumina%20Stays!5e0!3m2!1sen!2sin!4v1709000000000",
   mapsDirectionsUrl:
-    "https://maps.app.goo.gl/EDS19VCqSfnDqVeH9",
+    "https://www.google.com/maps/place/Lumina+Stays/@17.7456678,83.2439395,19z/data=!3m1!4b1!4m6!3m5!1s0x3a396711d138942b:0xee53a48b9ffbe34e!8m2!3d17.7456665!4d83.2445832!16s%2Fg%2F11z0p8jc64",
 };
 
-export const PRICE_PER_NIGHT = 4500; // INR
+export const PRICE_PER_NIGHT = 2500; // INR — Standard room
 export const TOTAL_ROOMS = 12;

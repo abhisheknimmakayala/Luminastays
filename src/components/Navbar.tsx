@@ -15,7 +15,6 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -63,18 +62,19 @@ export default function Navbar() {
       >
         <nav className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/logo.png"
-              alt="Lumina Stays"
-              width={130}
-              height={52}
-              className={cn(
-                "object-contain transition-all duration-300",
-                isHome && !scrolled ? "brightness-0 invert" : "brightness-0"
-              )}
-              priority
-            />
+          <Link href="/" className="flex flex-col items-start leading-none group">
+            <span className={cn(
+              "font-serif text-xl font-bold tracking-[0.08em] transition-colors duration-300",
+              isHome && !scrolled ? "text-white" : "text-gray-900"
+            )}>
+              LUMINA
+            </span>
+            <span className={cn(
+              "text-[10px] font-medium tracking-[0.35em] uppercase transition-colors duration-300",
+              isHome && !scrolled ? "text-gold-300" : "text-brand-600"
+            )}>
+              Stays
+            </span>
           </Link>
 
           {/* Desktop links */}
@@ -141,7 +141,10 @@ export default function Navbar() {
           )}
         >
           <div className="mb-6">
-            <Image src="/logo.png" alt="Lumina Stays" width={120} height={48} className="object-contain brightness-0" />
+            <div className="flex flex-col items-start leading-none">
+            <span className="font-serif text-xl font-bold tracking-[0.08em] text-gray-900">LUMINA</span>
+            <span className="text-[10px] font-medium tracking-[0.35em] uppercase text-brand-600">Stays</span>
+          </div>
           </div>
           <ul className="flex flex-col gap-1">
             {NAV_LINKS.map((link) => {

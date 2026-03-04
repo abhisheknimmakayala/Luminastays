@@ -105,16 +105,16 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-hero-gradient" />
 
         <div className="relative z-10 text-center px-4 max-w-2xl mx-auto">
-          {/* Logo on hero */}
-          <div className="flex justify-center mb-6 animate-fade-in">
-            <Image
-              src="/logo.png"
-              alt="Lumina Stays"
-              width={200}
-              height={80}
-              className="object-contain brightness-0 invert drop-shadow-lg"
-              priority
-            />
+          {/* Brand wordmark on hero */}
+          <div className="flex flex-col items-center mb-6 animate-fade-in">
+            <span className="font-serif text-4xl sm:text-5xl font-bold tracking-[0.12em] text-white drop-shadow-lg">
+              LUMINA
+            </span>
+            <div className="flex items-center gap-3 mt-1">
+              <span className="w-8 h-px bg-gold-300/60" />
+              <span className="text-gold-300 text-xs font-medium tracking-[0.4em] uppercase">Stays</span>
+              <span className="w-8 h-px bg-gold-300/60" />
+            </div>
           </div>
           <p className="text-gold-300 text-sm font-medium tracking-[0.2em] uppercase mb-3 animate-fade-in">
             Visakhapatnam · Andhra Pradesh

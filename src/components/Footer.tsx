@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Phone, Mail, MapPin, Instagram, Facebook } from "lucide-react";
 import { CONTACT } from "@/lib/utils";
 
@@ -9,8 +8,9 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Brand */}
         <div>
-          <div className="mb-3">
-            <Image src="/logo.png" alt="Lumina Stays" width={140} height={56} className="object-contain brightness-0 invert" />
+          <div className="mb-3 flex flex-col items-start leading-none">
+            <span className="font-serif text-xl font-bold tracking-[0.08em] text-white">LUMINA</span>
+            <span className="text-[10px] font-medium tracking-[0.35em] uppercase text-gold-300 mt-0.5">Stays</span>
           </div>
           <p className="text-brand-200 text-sm leading-relaxed">
             A boutique 12-room seaside retreat in the heart of Vizag.
