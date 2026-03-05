@@ -60,7 +60,7 @@ export async function POST(req: NextRequest) {
 
   // Create one booking record per room
   const bookings = await prisma.$transaction(
-    availableRooms.map((room) =>
+    availableRooms.map((room: { id: number }) =>
       prisma.booking.create({
         data: {
           roomId: room.id,
